@@ -1,13 +1,10 @@
-
-[MedSocial][MedSocial] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
+[AppHook][AppHook] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
 
 This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
 
-## Google Lighthouse
+## AppHook Solutions Landing Page
 
-![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
-
-[Google Lighthouse][Google Lighthouse] is an open-source, automated tool for measuring the quality of web pages. Google Lighthouse audits performance, accessibility and search engine optimization of web pages.
+![1](web.PNG)
 
 ### Performance
 
@@ -21,15 +18,15 @@ Checks for common issues that may prevent users from accessing your content.
 
 Looks for everything from HTTPS usage to correct image aspect ratios.
 
-### SEO 
+### SEO
 
 Checks for best practices to ensure your site is discoverable.
 
-
 ## Demo
 
-Check the live demo here 👉️ https://MedSocial-web.netlify.app/
+<!-- Check the live demo here 👉️ https://AppHook-web.netlify.app/ -->
 
+Check the live demo here 👉️ https://apphooksolutions.com/
 
 ### Installation
 
@@ -39,7 +36,7 @@ To create a new app, you have to:
 
 ### npx
 
-Use the following command 
+Use the following command
 
 ```sh
 npx create-react-app my-app --template adrinlol

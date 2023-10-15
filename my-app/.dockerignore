@@ -1,0 +1,10 @@
+# Exclude TypeScript source files
+*.ts
+*.tsx
+
+# Exclude TypeScript configuration files
+tsconfig.json
+
+# Exclude development dependencies and build artifacts
+node_modules/
+dist/

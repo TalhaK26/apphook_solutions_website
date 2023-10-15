@@ -1,0 +1,15 @@
+version: "1"
+
+services:
+  frontend:
+    container_name: medsocial-landing-page
+    build: .
+    volumes:
+      - "./:/app"
+      - "/app/node_modules"
+    ports:
+      - 8500:8500
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start
