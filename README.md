@@ -2,9 +2,11 @@
 
 This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
 
-## AppHook Solutions Landing Page
+## AppHook Solutions
 
-![1](web.PNG)
+<!-- ![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png) -->
+
+![1](./web.PNG)
 
 ### Performance
 
