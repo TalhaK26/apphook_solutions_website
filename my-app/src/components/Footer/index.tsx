@@ -54,38 +54,25 @@ const Footer = ({ t }: any) => {
               <Language>{"Contact"}</Language>
               <Large to="/">{"Tell us everything"}</Large>
               <Para>{`Do you have any question? Feel free to reach out.`}</Para>
-              {/* <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a> */}
             </Col>
             <Col lg={12} md={12} sm={12} xs={12}>
-              <Title>{"Policy"}</Title>
-              <Large
-                target="_blank"
-                href="https://cdn.medsocialonline.com/medsocial/agreement_individuals.html"
-                left="true"
-              >
-                Terms & Conditions
-              </Large>
-            </Col>
-            {/* <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-              <Large left="true" to="/">
-                {t("Support Center")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Customer Support")}
-              </Large>
-            </Col> */}
-          </Row>
-          <Row justify="space-between">
-            <Col lg={12} md={12} sm={12} xs={12}>
-              {/* <Empty /> */}
               <Language style={{ marginTop: "10px" }}>{"Address"}</Language>
               <Para>2500 Broadway Building F</Para>
               <Para>Suite F-125, Santa Monica</Para>
               <Para>CA 90404, United States</Para>
             </Col>
+          </Row>
+          <Row justify="space-between">
+          {/* <Col lg={12} md={12} sm={12} xs={12}>
+              <Title>{"Policy"}</Title>
+              <Large
+                target="_blank"
+                href=""
+                left="true"
+              >
+                Terms & Conditions
+              </Large>
+            </Col> */}  
             {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
               <Large left="true" to="/">
@@ -134,37 +121,31 @@ const Footer = ({ t }: any) => {
           >
             <NavLink to="/">
               <LogoContainer>
-                {/* <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                /> */}
                 <img
                   src={`/img/icons/app-logo.png`}
-                  alt="MedSocial"
+                  alt="AppHook Solutions"
                   width="200px"
                 />
               </LogoContainer>
             </NavLink>
-            <FooterContainer>
+            {/* <FooterContainer>
               <SocialLink
-                href="https://www.linkedin.com/company/medsocialpakistan/"
+                href=""
                 src="linkedin.svg"
               />
               <SocialLink
-                href="https://www.facebook.com/profile.php?id=100095320094432"
+                href=""
                 src="facebook.svg"
               />
-              {/* <SocialLink href="" src="github.svg" /> */}
-              {/* <SocialLink href="" src="medium.svg" /> */}
-              {/* <a href="https://www.buymeacoffee.com/adrinlol">
+              <SocialLink href="" src="github.svg" />
+              <SocialLink href="" src="medium.svg" />
+              <a href="">
                 <img
                   src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
                   alt="Buy me a pizza"
                 />
-              </a> */}
-            </FooterContainer>
+              </a>
+            </FooterContainer> */}
           </Row>
         </Container>
       </Extra>
