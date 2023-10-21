@@ -18,11 +18,16 @@ export const HeaderSection = styled("header")`
 `;
 
 export const ItemContainer = styled("div")`
+  transition: transform 0.5s !important;
+  cursor: pointer !important;
+
+  &:hover {
+    transform: rotate(-5deg) !important;
 `;
 
 export const Image = styled("img")`
   height: 300px !important;
-  cursor: pointer !important;
+  }
 `;
 
 export const Title = styled("p")`
