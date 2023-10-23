@@ -5,6 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import Portfolio from "../../components/Portfolio";
+import Clients from "../../components/Clients";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -48,6 +49,7 @@ const Home = () => {
         id="mission"
       />
       <Portfolio/>
+      <Clients/>
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}

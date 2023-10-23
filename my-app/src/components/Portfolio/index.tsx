@@ -71,7 +71,7 @@ const Portfolio = () => {
 
     
   return (
-    <div id="portfolio">
+    <div id="portfolio" style={{padding: '100px 0'}}>
       <h6>Portfolio</h6>
       <CustomCarousel
         showArrows={true}
