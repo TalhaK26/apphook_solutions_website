@@ -1,6 +1,17 @@
 import styled from "styled-components";
 import { Carousel } from 'react-responsive-carousel';
 
+export const Wrapper = styled("div")`
+  position: relative;
+  padding: 10rem 0px 8rem;
+
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 0;
+`;
+
 export const CustomCarousel = styled(Carousel)`
   /* Customize the navigation dots styles */
   .control-dots .dot {
@@ -18,6 +29,7 @@ export const HeaderSection = styled("header")`
 `;
 
 export const ItemContainer = styled("div")`
+  height: 350px;
   transition: transform 0.5s !important;
   cursor: pointer !important;
 

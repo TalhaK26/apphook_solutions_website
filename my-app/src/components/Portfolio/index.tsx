@@ -4,6 +4,7 @@ import {
   ItemContainer,
   Image,
   CustomCarousel,
+  Wrapper
 } from "./styles";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -71,7 +72,8 @@ const Portfolio = () => {
 
     
   return (
-    <div id="portfolio" style={{padding: '100px 0'}}>
+    // <div id="portfolio" style={{position: 'relative', padding: '10rem 0px 8rem'}}>
+    <Wrapper id="portfolio">
       <h6>Portfolio</h6>
       <CustomCarousel
         showArrows={true}
@@ -90,7 +92,7 @@ const Portfolio = () => {
           </ItemContainer>
         ))}
       </CustomCarousel>
-    </div>
+    </Wrapper>
   );
 };
 

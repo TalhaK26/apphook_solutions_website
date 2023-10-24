@@ -56,7 +56,7 @@ const Footer = ({ t }: any) => {
               <Para>{`Do you have any question? Feel free to reach out.`}</Para>
             </Col>
             <Col lg={12} md={12} sm={12} xs={12}>
-              <Language style={{ marginTop: "10px" }}>{"Address"}</Language>
+              <Language>{"Address"}</Language>
               <Para>2500 Broadway Building F</Para>
               <Para>Suite F-125, Santa Monica</Para>
               <Para>CA 90404, United States</Para>
