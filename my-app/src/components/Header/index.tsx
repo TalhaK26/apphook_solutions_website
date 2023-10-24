@@ -30,7 +30,7 @@ const Header = ({ t }: any) => {
   }, []);
 
   const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
+    const element = document.getElementById(id) as HTMLElement;
     console.log("element", element);
     element.scrollIntoView({
       behavior: "smooth",
@@ -41,18 +41,14 @@ const Header = ({ t }: any) => {
   const MenuItem = () => {
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <CustomNavLinkSmall onClick={() => scrollTo("services")}>
           <Span>{t("Services")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          onClick={() =>
-            window.open("http://app.medsocialonline.com/", "_blank")
-          }
-        >
+        <CustomNavLinkSmall onClick={() => scrollTo("portfolio")}>
           <Span>{t("Portfolio")}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => scrollTo("clients")}>
+          <Span>{t("Clients")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -71,10 +67,9 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            {/* <SvgIcon src="logo.svg" width="101px" height="64px" /> */}
             <img
               src={`/img/icons/app-logo.png`}
-              alt="MedSocial"
+              alt="AppHook Solutions"
               width="200px"
             />
           </LogoContainer>
@@ -85,7 +80,8 @@ const Header = ({ t }: any) => {
             <Outline />
           </Burger>
         </Row>
-        <Drawer closable={false} visible={visible} onClose={onClose}>
+        {/* <Drawer closable={false} visible={visible} onClose={onClose}> */}
+        <Drawer closable={false} open={visible} onClose={onClose}>
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label onClick={onClose}>
               <Col span={12}>

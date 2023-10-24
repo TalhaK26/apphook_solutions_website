@@ -2,7 +2,7 @@ version: "1"
 
 services:
   frontend:
-    container_name: medsocial-landing-page
+    container_name: apphook-landing-page
     build: .
     volumes:
       - "./:/app"

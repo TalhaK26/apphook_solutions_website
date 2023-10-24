@@ -1,14 +1,10 @@
 import  { useEffect, useState } from 'react';
-import { Row } from "antd";
 import { withTranslation } from "react-i18next";
-import Container from "../../common/Container";
 import {
-  HeaderSection,
   ItemContainer,
   Image,
   CustomCarousel,
-  Title,
-  Description,
+  Wrapper
 } from "./styles";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -47,27 +43,37 @@ interface Slide {
   description: string;
 }
 
-interface CarouselProps {
-  slides: Slide[];
-}
 const Portfolio = () => {
-  const itemsToShow = 3; // Customize the number of slides to show
-    const [selectedSlide, setSelectedSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const [selectedSlide, setSelectedSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedSlide((prev: any) => (prev + 1) % 9); // Adjust the number of items (9 in this case)
     }, 3000); // Adjust the auto-rotation interval (3 seconds in this case)
 
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1000); // Adjust the breakpoint as needed
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+    // Call it initially
+    handleResize();
+
     return () => {
       clearInterval(interval);
+      window.removeEventListener('resize', handleResize);
     };
-  }, []);
+    
+}, []);
 
 
     
   return (
-    <div id="portfolio">
+    // <div id="portfolio" style={{position: 'relative', padding: '10rem 0px 8rem'}}>
+    <Wrapper id="portfolio">
       <h6>Portfolio</h6>
       <CustomCarousel
         showArrows={true}
@@ -75,7 +81,7 @@ const Portfolio = () => {
         showThumbs={false}
         infiniteLoop={true}
         centerMode={true}
-        centerSlidePercentage={33.33}
+        centerSlidePercentage={isMobile ? 100 : 33.33}
         useKeyboardArrows={true}
         selectedItem={selectedSlide}
         onChange={(index) => setSelectedSlide(index)}
@@ -83,12 +89,10 @@ const Portfolio = () => {
         {slides.map((slide) => (
           <ItemContainer key={slide.id}>
             <Image src={slide.image} alt={slide.title} />
-            {/* <Title className="legend">{slide.title}</Title> */}
-            {/* <Description>{slide.description}</Description> */}
           </ItemContainer>
         ))}
       </CustomCarousel>
-    </div>
+    </Wrapper>
   );
 };
 

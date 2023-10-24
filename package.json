@@ -2,17 +2,16 @@
   "name": "cra-template-adrinlol",
   "version": "1.4.0",
   "keywords": [
-    "react-template",
-    "landy-template",
-    "cra-template",
-    "react-boilerplate",
-    "landing-page-template",
-    "react-free-template",
-    "react-landing-page-template",
-    "react-typescript-template"
+    "apphook-solutions",
+    "software-development",
+    "app-development",
+    "mobile-app-development",
+    "website-development",
+    "graphic-design",
+    "ui-ux-design"
   ],
   "main": "template.json",
-  "description": "Landy is a free React landing page template designed for developers and startups.",
+  "description": "We provide Digital Services for your Business with our Web & Mobile Applications.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Adrinlol/create-react-app-adrinlol.git"
